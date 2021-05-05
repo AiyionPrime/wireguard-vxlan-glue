@@ -1,14 +1,10 @@
 """Functions related to netlink manipulation for Wireguard, IPRoute and FDB on Linux."""
 import hashlib
 import re
-from dataclasses import dataclass
 from datetime import datetime
 from datetime import timedelta
 from json import loads as json_loads
 from textwrap import wrap
-from typing import Dict, List
-from datetime import datetime, timedelta
-import signal
 
 import argparse
 import signal
@@ -17,7 +13,6 @@ import pyroute2
 import time
 
 import ipaddress
-import re
 
 RT_PROTO_ID = 129
 RT_PROTO = "wg-vxlan-glue"
