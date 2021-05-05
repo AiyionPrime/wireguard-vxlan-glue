@@ -68,7 +68,7 @@ class WireGuardPeer:
         needs_config: Whether is_installed and is_established differ
     """
 
-    def __init__(self, public_key: str, latest_handshake : int = None,
+    def __init__(self, public_key: str, latest_handshake : datetime = None,
                  is_installed : bool = False):
         self.public_key = public_key
         self.latest_handshake = latest_handshake
